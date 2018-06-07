@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <style>
+    table, td, tr, th {
+border: 1px solid black;
+}
+
+    </style>
+  </head>
+  <body>
+    <p>Simple table</p>
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Amount</th>
+        <th>Client</th>
+        <tr>
+          <td>1</td>
+          <td>250$</td>
+          <td>John</td>
+        </tr>
+        <td>2</td>
+        <td>1300$</td>
+        <td>John</td>
+      </tr>
+      <td>3</td>
+      <td>4300$</td>
+      <td>Dennis</td>
+      </tr>
+    </table>
+    <hr>
+    <p>Table with colspan attributes</p>
+    <table>
+      <tr>
+        <th colspan="2">The table header</th>
+      </tr>
+      <tr>
+        <td>The table body</td>
+        <td>with two collums</td>
+      </tr>
+      <tr>
+        <td colspan="2">The table footer</td>
+      </tr>
+    </table>
+    <hr>
+    <p>Table with thead, tbody and tfoot.</p>
+    <table>
+      <thead>
+        <th>#</th>
+        <th>Countries</th>
+        <th>Capitals</th>
+        <th>Population</th>
+        <th>Language</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Lithuania</td>
+              <td>Vilnius</td>
+              <td>2.5 million</td>
+              <td>Lithuanian</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>USA</td>
+              <td>Washington, D.C.</td>
+              <td>309 million</td>
+              <td>English</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Sweden</td>
+              <td>Stockholm</td>
+              <td>9 million</td>
+              <td>Swedish</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="5">Footer</td>
+            </tr>
+          </tfoot>
+
+    </table>
+    <hr>
+    <p>Simple POST form</p>
+    <form>
+      Name: <input type="text" name="Name"><br><br>
+      Email: <input type="text" name="Email"><br><br>
+      Message: <textarea name="Message" rows="2"></textarea><br><br>
+      <input type="submit" value="Send your message">
+
+    </form>
+    <hr>
+    <p>POST form with select box, checkboxes and radio buttons</p>
+    <form>
+      Car name: <select name="">
+        <option value="Volvo">Volvo</option>
+
+      </select><br><br>
+      Gender <input type="radio" name="Gender" value="Male"> Male <input type="radio" name="Gender" value="Female"> Female <input type="radio" name="Gender" value="Other"> Other <br>
+      Comfort <input type="checkbox" name="Comfort" value="Heating"> Heating <input type="checkbox" name="Comfort" value="Cooling"> Cooling <input type="checkbox" name="Comfort" value="Cruise"> Cruise <br>
+      <input type="submit" value="Send your message">
+    </form>
+
+  </body>
+</html>
