@@ -1,0 +1,36 @@
+html, body, header, nav, ul, li {
+  margin: 0; padding: 0%
+}
+nav.nav li {
+  display: inline-block;
+}
+nav.nav ul {
+  text-align: center;
+  background-color: grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  word-spacing: 20px;
+}
+article.article {
+  background-color: blue;
+  padding: 1% 2% 2% 2%;
+  font-size: 17px;
+}
+a.a {
+  color: white;
+}
+section {
+  padding-left: 3%;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 1% 2% 2% 2%;
+  text-align: center;
+}
