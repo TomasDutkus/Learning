@@ -1,0 +1,30 @@
+.brown {
+  background-color: #825806;
+}
+.white {
+  background-color: #e2e5b7;
+}
+table {
+  text-align: center;
+  border-spacing: 0;
+  width: 520px;
+  height: 520px;
+  font-size: 37px;
+  border-style: double;
+  border-color: #825806;
+  background-color: #eef442;
+  border-width: 10px;
+}
+h1 {
+  font-size: 55px;
+  font-style: italic;
+}
+thead {
+  transform: rotate(180deg);
+}
+.invert {
+  transform: rotate(270deg);
+}
+.invert180 {
+  transform: rotate(180deg);
+}
