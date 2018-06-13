@@ -1,0 +1,38 @@
+body {
+  font-family: Merriweather;
+  line-height: 1.5;
+  margin: 0;
+  padding: 200px 100px;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  font-weight: bold;
+}
+h2 + h3 {
+  font-family: Open Sans;
+  color: lightgrey;
+}
+h4 + p {
+  background-color: grey;
+  font-size: small;
+  padding: 16px 16px 16px 16px;
+}
+article:nth-child(even) {
+  background-color: black;
+  color: white;
+  padding: 16px 16px 16px 16px;
+  margin: 24px 0px 24px 0px;
+}
+article > a:last-child {
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+  padding: 2px;
+}
+img {
+  width: 200px;
+  float: left;
+  margin: 0px 16px 40px 0px;
+}
