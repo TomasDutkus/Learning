@@ -1,0 +1,52 @@
+body {
+  font-family: "Open Sans";
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: lightgrey;
+}
+nav {
+  float: right;
+  display: inline-block;
+  padding: 30px;
+}
+.purple {
+    color: purple;
+    text-decoration: none;
+  }
+.black {
+  color: black;
+  text-decoration: none;
+}
+.float {
+  float: left;
+  width: 25%;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.float2 {
+  float: left;
+  width: 50%;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  font-weight: bold;
+}
+section:nth-child(3) {
+  color: white
+}
+.clearfix {
+    overflow: auto;
+}
