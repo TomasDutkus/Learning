@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+.square {
+  width: 50vw;
+  height: 50vw;
+  background-color: rgba(100, 100, 100, 0.4);
+  position: absolute;
+  left: 25vw;
+}
+.red {
+  height: 60%;
+  width: 60%;
+  background-color: rgba(255, 0, 0, 0.75);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 20%;
+  z-index: 0;
+  border: 10px solid red;
+  animation: animatered 5s alternate infinite ease;
+}
+.green {
+  height: 60%;
+  width: 60%;
+  background-color: rgba(0, 255, 0, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  border: 10px solid green;
+  animation: animategreen 5s alternate infinite ease;
+}
+.blue {
+  height: 60%;
+  width: 60%;
+  background-color: rgba(0, 0, 255, 0.25);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: 2;
+  border: 10px solid blue;
+  animation: animateblue 5s alternate infinite ease;
+}
+.text {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  font-size: 5vw;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+@keyframes animatered {
+  from{
+    left: 20%;
+    top: 0%;
+  }
+  to{
+    left: 20%;
+    top: 20%;
+  }
+}
+@keyframes animategreen {
+  from{
+    left: 0%;
+    top: 40%;
+  }
+  to{
+    left: 20%;
+    top: 20%;
+  }
+}
+@keyframes animateblue {
+  from{
+    left: 40%;
+    top: 40%;
+  }
+  to{
+    left: 20%;
+    top: 20%;
+  }
+}
