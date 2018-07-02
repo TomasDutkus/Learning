@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JSday1</title>
+    <meta name="author" content="Tomas Dutkus">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="JS">
+  </head>
+
+  <body>
+    <h1 id="height"></h1>
+    <h1 id="width"></h1>
+    <h1 id="perimeter"></h1>
+    <h1 id="area"></h1>
+    <h1 id="diagonal"></h1>
+    <script type="text/javascript">
+    var height = 5;
+document.getElementById("height").innerHTML = height + " Height";
+var width = 10;
+document.getElementById("width").innerHTML = width + " Width";
+perimeter = height * 2 + width * 2;
+document.getElementById("perimeter").innerHTML = perimeter + " Perimeter";
+area = height * width;
+document.getElementById("area").innerHTML = area + " Area";
+diagonal = Math.sqrt( height*height + width*width )
+document.getElementById("diagonal").innerHTML = diagonal + " Diagonal";
+    </script>
+  </body>
+</html>
