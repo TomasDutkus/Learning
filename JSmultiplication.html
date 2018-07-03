@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JSmultiplication</title>
+    <meta name="author" content="Tomas Dutkus">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="JS multiplication">
+    <link rel="stylesheet" href="css/JSmultiplication.css">
+  </head>
+  <body>
+      <h1>Multiplication</h1>
+    <div class="container">
+      <input id="number1" type="number" placeholder="Enter number">
+      <input id="number2" type="number" placeholder="Enter number">
+      <input id="result" type="number" placeholder="Result will be shown here">
+      <button onclick="calc()" type="button">Calculate</button>
+    </div>
+    <script>
+      function calc() {
+        var x=document.getElementById('number1').value,
+        y=document.getElementById('number2').value,
+        n=x*y;document.getElementById('result').value=n;
+      }
+    </script>
+
+  </body>
+</html>
