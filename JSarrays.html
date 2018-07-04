@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JSarrays</title>
+    <meta name="author" content="Tomas Dutkus">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="JS arrays">
+    <style>
+      table, td, th { border: 3px solid red }
+      h1 {text-align: center;}
+    </style>
+  </head>
+  <body>
+    <h1>JSarrays</h1>
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Nr.</th>
+        <th>Distance (m)</th>
+        <th>Time (s)</th>
+        <th>Speed (Km/h)</th>
+      </tr>
+      <tr>
+        <td id="date"></td>
+        <td id="nr"></td>
+        <td id="distance"></td>
+        <td id="time"></td>
+        <td id="speed"></td>
+      </tr>
+    </table>
+    <script>
+    var auto = {date:"2018-07-04", nr:"TDK848", distance:9300, time:203};
+    var speed = 9300 / 1000 / 203 * 60 * 60;
+    speed = Math.ceil(speed);
+    document.getElementById('date').innerHTML = auto["date"];
+    document.getElementById('nr').innerHTML = auto["nr"];
+    document.getElementById('distance').innerHTML = auto["distance"];
+    document.getElementById('time').innerHTML = auto["time"];
+    document.getElementById('speed').innerHTML = speed;
+    </script>
+  </body>
+</html>
