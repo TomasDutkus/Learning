@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JSTriangle</title>
+    <meta name="author" content="Tomas Dutkus">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="JS triangle">
+  </head>
+  <body>
+    <script>
+    function trikampio_plotas(a, b, c) {
+var p = (a + b + c) / 2,
+    plotas = Math.sqrt(p*(p - a)*(p - b)*(p - c));
+
+return plotas;
+}
+
+function arStatus(a, b, c) {
+
+var rezultatas = '';
+
+ a = a**2;
+ b = b**2;
+ c = c**2;
+
+ if (Math.max(a, b, c) == (a + b + c) - Math.max(a, b, c)) {
+     rezultatas = 'statusis';
+ } else {
+     rezultatas = 'nestatusis';
+ }
+
+return rezultatas;
+}
+
+
+function trikampio_tipas(a, b, c) {
+
+var plotas = trikampio_plotas(a, b, c),
+    statusis = arStatus(a, b, c),
+    rezultatas = '';
+
+
+if(plotas <= 0 || isNaN(plotas)) {
+   rezultatas = 'netrikampis';
+} // Įvairiakraštis, visos turi būti skirtingos kraštinės
+else if(a == b && b == c && c == a) {
+   rezultatas = 'lygiakrastis, ' + statusis + ', ' + ' kurio plotas yra ' + plotas;
+}
+else if(a != b && b != c && c != a) {
+   rezultatas = 'ivairiakrastis, ' + statusis + ', ' + ' kurio plotas yra ' + plotas;
+}
+else if(a == b || a == c || b == c) {
+ rezultatas = 'lygiasonis, ' + statusis + ', ' + ' kurio plotas yra ' + plotas;
+}
+
+return rezultatas;
+}
+
+alert(trikampio_tipas(3, 4, 5));
+alert(trikampio_tipas(8, 2, 10));
+alert(trikampio_tipas(4, 4, 4));
+alert(trikampio_tipas(6, 7, 6));
+
+    </script>
+  </body>
+</html>
