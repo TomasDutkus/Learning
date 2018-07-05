@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  background-color: #147aff;
+  text-align: right;
+  height: 62.5vw;
+}
+.block {
+  text-align: right;
+  width: 25vw;
+  background-color: #0049a8;
+  height: 25vw;
+}
+.stroked {
+  text-align: right;
+  width: 25vw;
+  background-color: #0049a8;
+  height: 25vw;
+  outline: 3vw solid black;
+  outline-offset: -3vw;
+}
+.rectangle {
+  text-align: right;
+  width: 60vw;
+  background-color: #a80070;
+  height: 25vw;
+  position: relative;
+}
+.rectangle > .block {
+  background-color: red;
+  position: absolute;
+  top: 0;
+}
+.rectangle.stroked {
+  background-color: yellow;
+  outline: 0;
+}
+.stroked:hover {
+  background-color: black;
+}
+span {
+  float: right;
+  padding: 3vw;
+  font-size: 3vw;
+  font-weight: bold;
+}
+div {
+  margin-bottom: 1vw;
+}
