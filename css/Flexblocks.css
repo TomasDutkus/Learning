@@ -1,0 +1,60 @@
+body {
+  font-size: 3rem;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 110%;
+}
+.A {
+  background-color: green;
+  height: 10vh;
+  flex: 0 1 75vw;
+}
+.B {
+  background-color: green;
+  height: 10vh;
+  flex: 0 1 25vw;
+}
+.C {
+  height: 80vh;
+  background-color: yellow;
+  flex: 0 1 15vw;
+}
+.containerblue {
+  flex: 0 1 60vw;
+}
+.D {
+  height: 10vh;
+  background-color: blue;
+}
+.E {
+  height: 10vh;
+  background-color: blue;
+}
+.G {
+  height: 60vh;
+  background-color: blue;
+}
+.containerred {
+  flex: 0 1 25vw;
+}
+.F {
+  height: 20vh;
+  background-color: red;
+}
+.H {
+  height: 60vh;
+  background-color: red;
+}
+.I {
+  height: 10vh;
+  background-color: teal;
+  flex: 0 1 100vw;
+}
+.A, .C, .D, .E, .G {
+  margin-right: 0.5vw;
+}
+.A, .B, .C, .D, .E, .F, .G, .H {
+  margin-bottom: 0.5vw;
+}
