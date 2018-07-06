@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: inline-block;
+}
+.A {
+  width: 100vw;
+  height: 10vh;
+  background-color: green;
+  float: left;
+}
+.B {
+  width: 25vw;
+  height: 10vh;
+  float: right;
+  outline: 1vw solid white;
+}
+.C {
+  width: 15vw;
+  height: 80vh;
+  background-color: yellow;
+  float: left;
+  outline: 1vw solid white;
+  overflow: hidden;
+}
+.D {
+  width: 60vw;
+  height: 80vh;
+  background-color: blue;
+  float: left;
+  outline: 1vw solid white;
+}
+.E {
+  width: 60vw;
+  height: 10vh;
+  background-color: blue;
+  float: left;
+  outline: 1vw solid white;
+  margin-top: 8.025vh;
+}
+.G {
+  width: 60vw;
+  height: 60vh;
+  background-color: blue;
+  float: left;
+  outline: 1vw solid white;
+  overflow: hidden;
+}
+.F {
+  width: 25vw;
+  height: 20vh;
+  background-color: red;
+  float: right;
+  outline: 1vw solid white;
+}
+.H {
+  width: 25vw;
+  height: 60vh;
+  background-color: red;
+  float: right;
+  outline: 1vw solid white;
+  overflow: hidden;
+}
+.I {
+  width: 100vw;
+  height: 10vh;
+  background-color: teal;
+  float: left;
+  outline: 1vw solid white;
+}
+p {
+  font-size: 3vw;
+}
